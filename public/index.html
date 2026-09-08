@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Fire Likes V2</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div class="badge">FREE FIRE • LIKES V2</div>
+    <h1>Envie likes pelo UID</h1>
+    <p>Digite o UID público do jogador e consulte a API V2.</p>
+
+    <form id="form">
+      <label for="uid">UID do jogador</label>
+      <div class="row">
+        <input id="uid" name="uid" inputmode="numeric" autocomplete="off"
+               placeholder="Ex.: 123456789" maxlength="15" required>
+        <button id="btn" type="submit">Enviar likes</button>
+      </div>
+      <small>Não informe senha, login ou código da conta.</small>
+    </form>
+  </section>
+
+  <section id="result" class="result hidden"></section>
+
+  <section class="info">
+    <div><strong>100</strong><span>likes prometidos pela API/dia</span></div>
+    <div><strong>UID</strong><span>somente o ID público é usado</span></div>
+    <div><strong>V2</strong><span>endpoint sem token, conforme documentação</span></div>
+  </section>
+
+  <footer>Projeto independente • não afiliado à Garena</footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
